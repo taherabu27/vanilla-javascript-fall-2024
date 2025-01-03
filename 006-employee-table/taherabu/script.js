@@ -94,7 +94,6 @@ const getPersonalInfo = document.getElementById("personalInfo");
 
 // }
 
-
 function employeeDetails() {
   employeeData.forEach((employee) => {
     const tableRow = document.createElement("tr");
@@ -118,9 +117,9 @@ function employeeDetails() {
     const address = employee.personalInfo.address;
     const father = employee.personalInfo.father;
     const salary = employee.personalInfo.salary;
-    cell4.innerText = `(Address:${address}, Father:${father}, Salary:${salary})`
+    cell4.innerText = `(Address:${address}, Father:${father}, Salary:${salary})`;
+    tableRow.appendChild(cell4);
 
-   
     // const link = document.createElement("a");
     // // link.href = ("https://www.w3schools.com/", target= "_blank");
     // link.href ="#"
@@ -128,7 +127,6 @@ function employeeDetails() {
     // link.innerText = "Click Here";
     // // link.innerText = showPersonalInfo;
     // cell4.appendChild(link);
-    tableRow.appendChild(cell4);
 
     // const cell4 = document.createElement("td");
     // cell4.innerText = showPersonalInfo();
